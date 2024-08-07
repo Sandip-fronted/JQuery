@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade Out Example</title>
+   <style>
+    .content {
+        padding: 20px;
+        height: 200px;
+        width: 100%;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    button {
+        margin-top: 20px;
+        padding: 10px;
+        margin-left: 20px;
+    }
+
+   </style>
+</head>
+<body>
+    <div class="content">
+        <!-- <p>This content will fade out when you click the button.</p> -->
+         <img src="../../ensepsen (2).jpg" class="img">
+    </div>
+    <button id="fade-out-button">Fade Out</button>
+    <button id="fade-in-button">Fade In</button>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fade-out-button').on('click', function() {
+                $('.img').fadeOut(1000); 
+            });
+
+            $('#fade-in-button').on('click', function() {
+                $('.img').fadeIn(1000); 
+            });
+        });
+
+    </script>
+</body>
+</html>

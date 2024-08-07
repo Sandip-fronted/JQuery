@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change-backgroundcolour</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            /* background:linear-gradient(aqua,blue); */
+            width: 100%;
+            height: 733px;
+            display: flex;
+        }
+        
+        .main div{
+            margin: 20px;
+            margin-top: 200px;
+            margin-left: 120px;
+            height: 400px;
+            width: 100px;
+            border: 3px solid black;
+           
+        }
+        .colour-1{
+            background-color:crimson;
+        }
+        .colour-2{
+            background-color:rgb(20, 207, 220);
+        }
+        .colour-3{
+            background-color:rgb(74, 222, 33);
+        }
+        .colour-4{
+            background-color:rgb(253, 249, 0);
+        }
+        .colour-5{
+            background-color:rgb(220, 20, 197);
+        }
+        .colour-6{
+            background-color:rgb(87, 26, 38);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="colour-1"></div>
+        <div class="colour-2"></div>
+        <div class="colour-3"></div>
+        <div class="colour-4"></div>
+        <div class="colour-5"></div>
+        <div class="colour-6"></div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+      
+        $('.colour-2').click(function () {
+        $(".main").css({backgroundColor: "rgb(20, 207, 220)"});
+        })
+
+        $('.colour-3').click(function () {
+        $(".main").css({backgroundColor: "rgb(74, 222, 33)"});
+        })
+
+        $('.colour-4').click(function () {
+        $(".main").css({backgroundColor: "rgb(253, 249, 0)"});
+        })
+
+        $('.colour-5').click(function () {
+        $(".main").css({backgroundColor: "rgb(220, 20, 197)"});
+        })
+        
+
+        $('.colour-6').click(function () {
+        $(".main").css({backgroundColor: "rgb(87, 26, 38)"});
+        })
+
+        $('.colour-1').click(function () {
+        $(".main").css({backgroundColor: "crimson"});
+        })
+        
+
+      });
+         
+      </script>
+</body>
+</html>

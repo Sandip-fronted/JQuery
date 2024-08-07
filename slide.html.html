@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/caa8a6b748.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .buttons h1 {
+            text-align: center;
+            margin-top: 33px;
+            font-size: 44px;
+            color: white;
+        }
+
+        .p1{
+            width: 600px;
+            height: 60px;
+            margin-left: 500px;
+            margin-top: 100px;
+        }
+
+        button i {
+            color: aliceblue;
+            float: right;
+            margin-left: 30px;
+        }
+
+        .paragraph {
+            width: 600px;
+            height: 70px;
+            background-color: aqua;
+            margin-left: 500px;
+            
+        }
+
+        #up{
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+        #down{
+            margin-top: 100px;
+            margin-left: 650px;
+        }
+        #toggle{
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="buttons">
+        <button class="p1">slide up/ slide down/ slide toggle</button><br>
+        <div class="paragraph" id="p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum optio
+            dolorem at voluptas assumenda, in iusto quos eveniet mollitia repellendus,
+            possimus facilis quibusdam laborum sint cumque itaque vitae similique
+            nemo.
+        </div>
+        <button id="down">slide down</button>
+        <button id="up">slide up</button>
+        <button id="toggle">slide toggle</button>
+
+    <script src="../../jquery/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('.paragraph').hide()
+
+            $("#up").click(function () {
+                $("#p1").slideUp()
+            });
+
+            $("#down").click(function () {
+                $("#p1").slideDown()
+            });
+
+            $("#toggle").click(function () {
+                $("#p1").toggle()
+            });
+        });
+    </script>
+
+</body>
+
+</html>
